@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 12vh;
+  text-align: center;
+  border-bottom: 2px dashed #fff;
+}
+
+header h1 {
+  font-size: 5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 0.1em;
+}
+
+header span {
+  font-size: 1.3rem;
+}
+
+header span a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer {
+  font-size: 1.5rem;
+  font-weight: 700;
+  height: 10vh;
+  padding: 1.2em;
+  text-align: center;
+  line-height: 5vh;
+  border-top: 2px dashed #fff;
+}
+
+footer p a {
+  text-decoration: none;
+  color: #fff;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  position: relative;
+}
+
+.main-game-container {
+  width: 1000px;
+  height: 600px;
+  padding: 1.3em;
+  border-radius: 22px;
+  background-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  display: flex;
+}
+
+main .main-game-container .player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 50%;
+  padding: 9.5em;
+  border-radius: 22px;
+}
+
+main .main-game-container .player .name {
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 4.2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+main .main-game-container .player .score {
+  font-size: 8.5rem;
+  font-weight: 400;
+  color: #c7365f;
+  margin-bottom: auto;
+}
+
+main .main-game-container .player--active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+main .main-game-container .player .current-score-box {
+  width: 67%;
+  height: 33%;
+  background-color: hsl(343, 57%, 50%);
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.7;
+  font-size: 1.7rem;
+  font-family: inherit;
+}
+
+main .main-game-container .player .current-score-box .current-score-label {
+  text-transform: uppercase;
+  padding: 0.75em 0 0;
+}
+
+main .main-game-container .player .current-score-box .current-score {
+  font-size: 3.75rem;
+}
+
+/* Buttons */
+
+.btn {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  font-size: 1.5rem;
+  font-weight: 400;
+  font-family: inherit;
+  text-transform: uppercase;
+  padding: 0.85em 2.7em;
+  border-radius: 25px;
+  cursor: pointer;
+  background: none;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+/* Using the psuedo active element to simulate button being pressed */
+
+.btn:active {
+  transform: translate(-50%, -10%) translateY(4px);
+}
+
+.btn--new {
+  top: 10rem;
+}
+
+.btn--roll {
+  top: 43rem;
+}
+
+.btn--hold {
+  top: 50rem;
+}
+
+.emoji {
+  display: inline-block;
+  transform: scale(1.7);
+  margin-right: 1em;
+}
+
+/* To hide the dice image  */
+
+.hidden {
+  display: none;
+}

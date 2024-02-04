@@ -170,8 +170,15 @@ main .main-game-container .player .current-score-box .current-score {
   margin-right: 1em;
 }
 
+.dice {
+  position: absolute;
+  top: 25rem;
+  width: 10rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.3);
+}
+
 /* To hide the dice image  */
 
-.hidden {
+/* .hidden {
   display: none;
-}
+} */

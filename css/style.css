@@ -179,6 +179,6 @@ main .main-game-container .player .current-score-box .current-score {
 
 /* To hide the dice image  */
 
-/* .hidden {
+.hidden {
   display: none;
-} */
+}

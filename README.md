@@ -34,7 +34,7 @@ No contribution required.
 
 ## Testing the Application
 
-You can test the application by playing the game: check if the current score is being updated and when pressing hold, does the score update with the current score, after reaching greater that 100, do you win the game and styles are changed and all game settings are reset?
+You can test the application by playing the game: check if the current score is being updated and when pressing hold; does the score update with the current score; after reaching greater than 100, do you win the game and styles are changed and all game settings are reset?
 
 ## Snapshot Of The Application
 

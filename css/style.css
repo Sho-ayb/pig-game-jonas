@@ -101,6 +101,12 @@ main .main-game-container .player .score {
 
 main .main-game-container .player--active {
   background-color: rgba(255, 255, 255, 0.4);
+  transition: all 0.75s ease;
+}
+
+main .main-game-container .player--winner {
+  background-color: #2f2f2f;
+  color: #fff;
 }
 
 main .main-game-container .player .current-score-box {
